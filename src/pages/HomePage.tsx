@@ -1,5 +1,5 @@
 
-import { BookOpen, Tool, MessageCircle } from "lucide-react";
+import { BookOpen, Wrench, MessageCircle } from "lucide-react";
 import Hero from "@/components/Hero";
 import Card from "@/components/Card";
 import Button from "@/components/Button";
@@ -41,7 +41,7 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card
               title="Servizi"
-              icon={<Tool size={48} />}
+              icon={<Wrench size={48} />}
               link="/servizi"
             />
             <Card
