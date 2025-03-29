@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dettaglio Prodotto - ID.EL. Systems</title>
+    <meta name="description" content="Dettagli del prodotto selezionato" />
+    <meta name="author" content="ID.EL. Systems S.r.l.s." />
+    
+    <link rel="icon" href="/lovable-uploads/1bf09bfe-3c4b-4a5f-afaa-698b72c7d3e9.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css">
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <a href="index.html" class="logo">
+            <img src="/lovable-uploads/1bf09bfe-3c4b-4a5f-afaa-698b72c7d3e9.png" alt="ID.EL Systems Logo">
+            <span>Id.el.systems</span>
+          </a>
+          <nav class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="chi-siamo.html">Chi siamo</a>
+            <a href="servizi.html">I nostri servizi</a>
+            <a href="catalogo.html" class="active">Catalogo</a>
+            <a href="contatti.html">Contatti</a>
+          </nav>
+          <button class="mobile-menu-button" id="mobileMenuButton">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+          <a href="index.html">Home</a>
+          <a href="chi-siamo.html">Chi siamo</a>
+          <a href="servizi.html">I nostri servizi</a>
+          <a href="catalogo.html" class="active">Catalogo</a>
+          <a href="contatti.html">Contatti</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container product-container">
+        <div class="product-navigation">
+          <a href="#" id="backToCategory" class="back-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Torna alla categoria
+          </a>
+        </div>
+
+        <h1 class="product-title" id="productTitle">Dettaglio Prodotto</h1>
+
+        <div class="product-detail-grid">
+          <div class="product-image-container">
+            <img id="productImage" src="/lovable-uploads/1bc85707-98bb-44ae-826c-0f57c793cadb.png" alt="Prodotto" class="product-image">
+            <a href="#" class="download-button" id="downloadButton">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15M7 10L12 15M12 15L17 10M12 15V3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Scarica scheda tecnica
+            </a>
+          </div>
+          
+          <div class="product-info">
+            <div class="product-section">
+              <h2>Descrizione</h2>
+              <div class="product-description-grid">
+                <div>
+                  <p id="productDescription">Descrizione prodotto breve ed esplicativa...</p>
+                </div>
+                <div class="technical-drawing">
+                  <img id="technicalDrawing" src="/lovable-uploads/1bc85707-98bb-44ae-826c-0f57c793cadb.png" alt="Disegno tecnico">
+                </div>
+              </div>
+            </div>
+            
+            <div class="product-section">
+              <h2>Specifiche Tecniche</h2>
+              <div class="specifications-grid">
+                <div class="spec-item">
+                  <p class="spec-label">Materiale:</p>
+                  <p class="spec-value">Polipropilene</p>
+                </div>
+                <div class="spec-item">
+                  <p class="spec-label">Dimensioni:</p>
+                  <p class="spec-value">10 x 5 x 2 cm</p>
+                </div>
+                <div class="spec-item">
+                  <p class="spec-label">Temperatura Max:</p>
+                  <p class="spec-value">80°C</p>
+                </div>
+                <div class="spec-item">
+                  <p class="spec-label">Pressione Max:</p>
+                  <p class="spec-value">16 bar</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="product-section">
+              <h2>Prodotti Correlati</h2>
+              <div class="related-products" id="relatedProducts">
+                <!-- Related products will be loaded dynamically -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-info">
+            <p class="font-medium">ID.EL. Systems S.r.l.s.</p>
+            <p>Via Fabbriche, 22 - 15069 Serravalle Scrivia (AL)</p>
+            <p>00956750103</p>
+            <p>+39 0143 60991</p>
+          </div>
+          <div class="footer-copyright">
+            <p><script>document.write(new Date().getFullYear());</script> ID.EL. Systems All Rights Reserved</p>
+          </div>
+          <div class="footer-contact">
+            <div>
+              <p class="font-medium">Servizio Clienti</p>
+              <p>+39 0143 609920</p>
+              <p>sales@plasson.it</p>
+            </div>
+            <div class="mt-2">
+              <p class="font-medium">Ufficio Tecnico</p>
+              <p>+39 0143 609930</p>
+              <p>tecnico@plasson.it</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="scripts.js"></script>
+    <script src="prodotto.js"></script>
+  </body>
+</html>

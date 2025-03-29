@@ -19,12 +19,127 @@
     <meta name="twitter:image" content="/lovable-uploads/1bf09bfe-3c4b-4a5f-afaa-698b72c7d3e9.png" />
     
     <link rel="icon" href="/lovable-uploads/1bf09bfe-3c4b-4a5f-afaa-698b72c7d3e9.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css">
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
   </head>
 
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <a href="index.html" class="logo">
+            <img src="/lovable-uploads/1bf09bfe-3c4b-4a5f-afaa-698b72c7d3e9.png" alt="ID.EL Systems Logo">
+            <span>Id.el.systems</span>
+          </a>
+          <nav class="desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="chi-siamo.html">Chi siamo</a>
+            <a href="servizi.html">I nostri servizi</a>
+            <a href="catalogo.html">Catalogo</a>
+            <a href="contatti.html">Contatti</a>
+          </nav>
+          <button class="mobile-menu-button" id="mobileMenuButton">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+          <a href="index.html">Home</a>
+          <a href="chi-siamo.html">Chi siamo</a>
+          <a href="servizi.html">I nostri servizi</a>
+          <a href="catalogo.html">Catalogo</a>
+          <a href="contatti.html">Contatti</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img src="/lovable-uploads/1bf09bfe-3c4b-4a5f-afaa-698b72c7d3e9.png" alt="Background" class="hero-background">
+        <div class="hero-overlay">
+          <div class="hero-content container">
+            <h1>ID.EL. SYSTEMS s.r.l.s.</h1>
+            <div class="hero-box">
+              <p class="tagline">
+                Le nuove tecnologie stanno trasformando il settore, creando
+                opportunità ma anche nuove sfide.
+              </p>
+              <p class="question">
+                La tua azienda è pronta a evolversi?
+              </p>
+              <p>
+                Offriamo soluzioni elettriche e idrauliche innovative per un futuro
+                sicuro, efficiente e competitivo!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services container">
+        <div class="card-grid">
+          <a href="servizi.html" class="card">
+            <div class="card-content">
+              <div class="icon-wrapper">
+                <img src="icons/wrench.svg" alt="Servizi" class="icon">
+              </div>
+              <h3>Servizi</h3>
+              <div class="button">Scopri di più</div>
+            </div>
+          </a>
+          <a href="catalogo.html" class="card">
+            <div class="card-content">
+              <div class="icon-wrapper">
+                <img src="icons/book-open.svg" alt="Catalogo" class="icon">
+              </div>
+              <h3>Catalogo</h3>
+              <div class="button">Scopri di più</div>
+            </div>
+          </a>
+          <a href="contatti.html" class="card">
+            <div class="card-content">
+              <div class="icon-wrapper">
+                <img src="icons/message-circle.svg" alt="Preventivi" class="icon">
+              </div>
+              <h3>Preventivi</h3>
+              <div class="button">Scopri di più</div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-info">
+            <p class="font-medium">ID.EL. Systems S.r.l.s.</p>
+            <p>Via Fabbriche, 22 - 15069 Serravalle Scrivia (AL)</p>
+            <p>00956750103</p>
+            <p>+39 0143 60991</p>
+          </div>
+          <div class="footer-copyright">
+            <p><script>document.write(new Date().getFullYear());</script> ID.EL. Systems All Rights Reserved</p>
+          </div>
+          <div class="footer-contact">
+            <div>
+              <p class="font-medium">Servizio Clienti</p>
+              <p>+39 0143 609920</p>
+              <p>sales@plasson.it</p>
+            </div>
+            <div class="mt-2">
+              <p class="font-medium">Ufficio Tecnico</p>
+              <p>+39 0143 609930</p>
+              <p>tecnico@plasson.it</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="scripts.js"></script>
   </body>
 </html>
