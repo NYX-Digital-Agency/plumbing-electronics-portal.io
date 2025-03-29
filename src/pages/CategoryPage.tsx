@@ -88,15 +88,15 @@ const CategoryPage = () => {
 
   return (
     <div>
-      <Hero 
-        title={getCategoryName(category || "")}
-        bgColor="bg-white"
-        textColor="text-idel-dark"
-      />
+      <div className="border-b border-gray-300">
+        <div className="container mx-auto px-4 py-6">
+          <h1 className="text-3xl font-bold text-idel-dark">{getCategoryName(category || "")}</h1>
+        </div>
+      </div>
 
-      <div className="py-12">
+      <div className="py-10 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
             {filteredProducts.map((product) => (
               <ProductCard
                 key={product.id}
@@ -104,6 +104,7 @@ const CategoryPage = () => {
                 name={product.name}
                 image={product.image}
                 category={category || ""}
+                className="bg-white border-2 border-gray-200 rounded-xl hover:shadow-md"
               />
             ))}
           </div>

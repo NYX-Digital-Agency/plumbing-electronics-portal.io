@@ -13,21 +13,23 @@ interface ProductCardProps {
 
 const ProductCard = ({ id, name, image, category, className }: ProductCardProps) => {
   return (
-    <div className={cn("bg-white rounded-lg border border-gray-200 overflow-hidden", className)}>
-      <Link to={`/catalogo/${category}/${id}`} className="block">
-        <div className="p-4 flex flex-col items-center">
+    <div className={cn("bg-white rounded-xl overflow-hidden flex flex-col items-center", className)}>
+      <Link to={`/catalogo/${category}/${id}`} className="w-full p-4 flex flex-col items-center">
+        <div className="w-full h-32 flex items-center justify-center mb-2">
           <img
             src={image}
             alt={name}
-            className="w-24 h-24 object-contain mb-4"
+            className="max-h-full max-w-full object-contain"
           />
-          <h3 className="text-center text-idel-dark font-medium">{name}</h3>
-          <div className="mt-4">
-            <Button variant="primary" size="sm">
-              Scopri di più
-            </Button>
-          </div>
         </div>
+        <h3 className="text-center text-idel-dark font-bold mb-4">{name}</h3>
+        <Button 
+          variant="primary" 
+          size="sm" 
+          className="w-full rounded-md text-xs"
+        >
+          Scopri di più
+        </Button>
       </Link>
     </div>
   );
